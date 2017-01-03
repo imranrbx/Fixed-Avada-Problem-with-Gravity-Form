@@ -14,5 +14,5 @@ if ( ! defined( 'ABSPATH' ) ) {
    wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-1.12.4.min.js', array(), '1.12.4', true );
    wp_deregister_script('main' );
    wp_dequeue_script('main' );
-   wp_register_script( 'main', plugin_dir_url(__FILE)) )."/main.js", array('jquery'), "4.5.1", true );
+   wp_register_script( 'main', plugin_dir_url(__FILE__)."/main.js", array('jquery'), "4.5.1", true );
    wp_enqueue_script('main' );
